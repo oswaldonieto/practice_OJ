@@ -8,6 +8,8 @@
 !!$
 !!$ This program solves the relativistic wave equation onto a
 !!$ Minkowski space-time.
+!!$ LINEA AGREGADA
+!!$ LINEA AGREGADA2
 !!$ ---------------------------------------------------------------
 
 program main 
