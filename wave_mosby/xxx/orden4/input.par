@@ -1,0 +1,42 @@
+9&Wave_Input
+
+!============================================================
+! This is the input file, here are the parameters are defined
+!============================================================
+
+! Grid Data 
+
+res_num      = 2
+xmin         = -1.0
+xmax         = 1.0
+N_points_xx  = 1000
+Ntt          = 2000
+courant      = 0.5
+every_1D_ini = 10
+
+! Initial wave data
+
+amplitude    = 1.0
+x0           = 0.0
+sigma        = 0.1
+
+! Integration order
+
+order        = 2
+
+! Integration Method 
+! integrator = 1 --> Rungekutta 3 orden (Predictor-Corrector)
+! integrator = 2 --> Rungekutta 4 orden (Usual)
+! integrator = 3 --> Rungekutta 4 orden (Feghberg)
+
+integrator   = 2
+
+
+! Boundary type
+! bounds = 1 --> Outgoing
+! bounds = 2 --> periodic
+
+bounds   = 1
+
+
+/

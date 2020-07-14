@@ -1,0 +1,20 @@
+subroutine Derivs(u,dx,)
+
+use global_parameters
+use arrays
+
+implicit none
+
+integer i
+
+rhs_phi = alpha*PI + beta*psi
+
+do i = 1, N_points_x - 1
+
+if (order.eq.1) then
+
+  rhs_phi = alpha(i)*(PI(i+1) - PI(i-1))/(2.0d0*dx) &
+             + PI(i)*(alpha(i+1) - alpha(i-1))/(2.0d0*dx) &
+             + beta(i)*(psi(i+1) - psi(i-1))/(2.0d0*dx) &
+             + psi(i)*(beta(i+1) - beta(i-1))/(2.0d0*dx)
+

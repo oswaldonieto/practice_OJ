@@ -1,0 +1,17 @@
+subroutine Derivs(u,du,l)
+
+implicit none
+
+use arrays
+use global_parameters  
+
+intent(in) :: u
+intent(in) :: l
+intent(out) :: du
+
+
+du(i) = (u(i+1) - u(i-1))/(2.0d0*dx) 
+             
+
+
+end subroutine Derivs
